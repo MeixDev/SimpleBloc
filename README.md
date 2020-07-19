@@ -53,3 +53,11 @@ Then, in your Widget's build function :
     );
   }
 ```
+
+In order to update your BehaviorSubject with new values, you just have to use the add method on the StreamSink:
+
+```dart
+  _bottomSheetController.sink.add(true);
+  // BehaviorSubject also adds a QoL shortcut:
+  _bottomSheetController.add(false);
+```
