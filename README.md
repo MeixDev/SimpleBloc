@@ -1,9 +1,24 @@
 # Simple_BLoC
 
 Implementation of the BLoC pattern along with an easier implementation using functions instead of events.
+
 The base implementation is from this article from [didierboelens.com](https://www.didierboelens.com/2018/12/reactive-programming-streams-bloc-practical-use-cases/).
+
 The original GitHub repository of the article is also available here along with documentation about the Event-State management: [boeledi/blocs](https://github.com/boeledi/blocs)
+
 I then applied some changes (Such as allowed the BlocProvider to take multiple blocs as inputs), and added the RepositoryProvider and RepositoryBase classes, heavily influenced by the BlocProvider class.
+
+As the project is not released on [pub.dev](https://pub.dev), you must add it as a dependency of your project the following way:
+
+```yaml
+dependencies:
+  number_picker_redux:
+    git:
+      url: git@github.com:MeixDev/SimpleBloc.git
+```
+
+if you get a `Host key verification failed` when trying to pub get, you should add GitHub as a known host:
+`ssh-keyscan github.com >> ~/.ssh/known_hosts`
 
 ## How to use as a Simple BLoC Implementation ?
 
